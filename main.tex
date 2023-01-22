@@ -1,0 +1,33 @@
+\documentclass[12pt]{report}
+\input{etc/pkgs}
+\input{etc/style}
+\begin{document}
+
+\begin{titlepage}
+\centering
+{\includegraphics[width=0.2\textwidth]{etc/UNED.jpg}\par}
+\vspace{1cm}
+{\bfseries\LARGE Universidad Nacional de Educación a Distancia \par}
+\vspace{1cm}
+{\scshape\Large Grado en Física \par}
+\vspace{3cm}
+{\scshape\Huge Asignatura \par}
+\vspace{3cm}
+\vfill
+{\Large Autor: \par}
+{\Large Daniel Pérez \par}
+\vfill
+\end{titlepage}
+
+    % Índice del documento y de figuras
+    \begingroup
+        % Los enlaces son normalmente azules, pero en los índices se configuran a negro
+        % para que no aparezca todo azul
+        \hypersetup{linkcolor=black}
+        \tableofcontents
+    \endgroup
+    \clearpage\pagenumbering{arabic}
+    
+
+
+\end{document}
